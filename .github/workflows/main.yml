@@ -15,4 +15,4 @@ jobs:
       - name: 필요한 도구 설치
         run: pip install yfinance requests
       - name: 실행
-        run: python .github/workflow/main.py
+        run: python .github/workflows/main.py
