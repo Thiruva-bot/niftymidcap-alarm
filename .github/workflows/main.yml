@@ -1,7 +1,9 @@
 name: Nifty-Alarm
 
 on:
-  workflow_dispatch: # 수동 실행 버튼
+  schedule:
+    - cron: '0 0 * * *'  # 이 설정이 한국 시간 오전 9시입니다!
+  workflow_dispatch:
 
 env:
       TZ: Asia/Seoul  # 이 한 줄이 시간을 한국으로 맞춰줍니다!
