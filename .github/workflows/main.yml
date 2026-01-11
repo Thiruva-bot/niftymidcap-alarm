@@ -3,6 +3,8 @@ name: Nifty-Alarm
 on:
   workflow_dispatch: # 수동 실행 버튼
 
+env:
+      TZ: Asia/Seoul  # 이 한 줄이 시간을 한국으로 맞춰줍니다!
 jobs:
   run-bot:
     runs-on: ubuntu-latest
